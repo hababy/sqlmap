@@ -1,0 +1,10 @@
+GET /shownews.asp HTTP/1.1
+Host: 59.63.200.79:8004
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:90.0) Gecko/20100101 Firefox/90.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+Accept-Encoding: gzip, deflate
+Connection: close
+Cookie: PHPSESSID=7qi40vfs087ujlgoii25982360; UM_distinctid=17aad5bf0421f0-0b4334aadccc5b-4c3e257a-144000-17aad5bf0434a5; CNZZDATA1707573=cnzz_eid%3D1580132532-1626406125-http%253A%252F%252F59.63.200.79%253A5456%252F%26ntime%3D1626415535; admin_id=1; admin_level=1; admin_name=admin; admin_secret=68e27f73ef771bfab83d08c569027323; ASPSESSIONIDSSCARTAB=DHOOKMECJOLBBDLPEKCOAJGI; id=172*
+Upgrade-Insecure-Requests: 1
+

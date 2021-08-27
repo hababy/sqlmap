@@ -1,0 +1,16 @@
+POST /Less-19/ HTTP/1.1
+Host: 10.233.233.1
+Connection: keep-alive
+Content-Length: 38
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.233.233.1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 Edg/92.0.902.67
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.233.233.1/Less-19/*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,ca;q=0.5,cy;q=0.4
+Cookie: PHPSESSID=mn98156mi4s96ft7f7g6706v11; security=low
+
+uname=admin&passwd=admin&submit=Submit
