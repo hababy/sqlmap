@@ -749,11 +749,16 @@ def _listTamperingFunctions():
         logger.info(infoMsg)
 
         for script in sorted(glob.glob(os.path.join(paths.SQLMAP_TAMPER_PATH, "*.py"))):
-            content = openFile(script, "rb").read()
+            content = openFile(script, "rb").read().replace("\r\n", "\n")
             match = re.search(r'(?s)__priority__.+"""(.+)"""', content)
             if match:
-                comment = match.group(1).strip()
-                dataToStdout("* %s - %s\n" % (setColor(os.path.basename(script), "yellow"), re.sub(r" *\n *", " ", comment.split("\n\n")[0].strip())))
+                if os.path.basename(script).startswith("0my"):
+                    comment = match.group(1).strip()
+                    dataToStdout("* %s - %s\n" % (setColor(os.path.basename(script), "red"), re.sub(r" *\n *", " ", comment.split("\n\n")[0].strip())))
+                else:
+                    comment = match.group(1).strip()
+                    dataToStdout("* %s - %s\n" % (setColor(os.path.basename(script), "yellow"),
+                                                  re.sub(r" *\n *", " ", comment.split("\n\n")[0].strip())))
 
 def _setTamperingFunctions():
     """

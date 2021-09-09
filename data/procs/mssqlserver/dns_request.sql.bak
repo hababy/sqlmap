@@ -1,0 +1,1 @@
+SELECT+*+from+fn_trace_gettable('\\'+'%PREFIX%.'+(%QUERY%)+'.%SUFFIX%.%DOMAIN%'+'\%RANDSTR1%'+'\1.trc',default)

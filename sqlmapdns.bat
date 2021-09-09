@@ -1,3 +1,3 @@
 @echo off
-echo "在sqlmap使用--dns-domai使用,可以在无公网域名的情况下实现dns带外注入,请配置--dns-doamain='sqlmap.fa1lb2.ceye.io'"
+echo "锟斤拷sqlmap使锟斤拷--dns-domai使锟斤拷,锟斤拷锟斤拷锟斤拷锟睫癸拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟绞碉拷锟絛ns锟斤拷锟斤拷注锟斤拷,锟斤拷锟斤拷锟斤拷--dns-domain='sqlmap.fa1lb2.ceye.io'"
 python "D:\Program_Tools\sqlmap\sqlmapdns.py"

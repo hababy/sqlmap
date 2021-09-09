@@ -6,21 +6,22 @@ See the file 'LICENSE' for copying permission
 """
 
 from lib.core.enums import PRIORITY
+
 import re
 
-__priority__ = PRIORITY.LOW
-
+__priority__ = PRIORITY.HIGHEST
 
 def dependencies():
     pass
 
-
 def tamper(payload, **kwargs):
     """
+    Double write the specified keywords
+
     双写指定的关键字
 
     >>> tamper("2) AND 2621=1604 AND (2724=2724")
-    2) AANDND 2621=1604 AANDND (2724=2724
+    '2) AANDND 2621=1604 AANDND (2724=2724'
     """
     payload = payload.replace("OR", "OORR").replace("AND", "AANDND")
     return payload if payload else payload
