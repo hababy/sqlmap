@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Copyright (c) 2006-2021 sqlmap developers (http://sqlmap.org/)
+Copyright (c) 2006-2021 sqlmap developers (https://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
@@ -695,7 +695,7 @@ class Connect(object):
 
         except SqlmapConnectionException as ex:
             if conf.proxyList and not kb.threadException:
-                warnMsg = "unable to connect to the target URL ('%s')" % ex
+                warnMsg = "unable to connect to the target URL ('%s')" % getSafeExString(ex)
                 logger.critical(warnMsg)
                 threadData.retriesCount = conf.retries
                 return Connect._retryProxy(**kwargs)
@@ -978,7 +978,7 @@ class Connect(object):
 
         if conf.httpHeaders:
             headers = OrderedDict(conf.httpHeaders)
-            contentType = max(headers[_] if _.upper() == HTTP_HEADER.CONTENT_TYPE.upper() else "" for _ in headers) or None
+            contentType = max(headers[_] or "" if _.upper() == HTTP_HEADER.CONTENT_TYPE.upper() else "" for _ in headers) or None
 
             if (kb.postHint or conf.skipUrlEncode) and postUrlEncode:
                 postUrlEncode = False

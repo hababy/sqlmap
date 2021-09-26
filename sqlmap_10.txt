@@ -1,16 +1,15 @@
-POST /Less-18/ HTTP/1.1
-Host: 10.233.233.1
-User-Agent: *
+POST /login_out.asp HTTP/1.1
+Host: 222.240.1.48:8000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
 Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
 Accept-Encoding: gzip, deflate
-Referer: http://10.233.233.1/Less-19/?id='
 Content-Type: application/x-www-form-urlencoded
-Content-Length: 38
-Origin: http://10.233.233.1
-Connection: keep-alive
-Cookie: PHPSESSID=lol4dqg9585ij21726if2nvt77; security=high
+Content-Length: 178
+Origin: http://222.240.1.48:8000
+Connection: close
+Referer: http://222.240.1.48:8000/login_out.asp
+Cookie: ASPSESSIONIDQASQBDSC=FLGBNJEDJCJBGBGLBHBBPEKE; ID%5FCard%5Fcookie=d033e22ae348aeb5660fc2140aec35850c4da997;oabusyusername=1*
 Upgrade-Insecure-Requests: 1
-Cache-Control: max-age=0
 
-uname=admin&passwd=admin&submit=Submit
+username=admin111&password=37f756110369cd456900a92fedd0e3aa102028d9&ID_Card_encode=d033e22ae348aeb5660fc2140aec35850c4da997&verifycode=ffd3b4f784eddc25cab5961d1777d42f6d84c874&l=

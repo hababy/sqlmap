@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-Copyright (c) 2006-2021 sqlmap developers (http://sqlmap.org/)
+Copyright (c) 2006-2021 sqlmap developers (https://sqlmap.org/)
 See the file 'LICENSE' for copying permission
 """
 
@@ -140,6 +140,7 @@ class DNSServer(object):
                     self._socket.sendto(_.response("127.0.0.1"), addr)
 
                     with self._lock:
+                        print(_._query.decode())
                         self._requests.append(_._query)
 
             except KeyboardInterrupt:

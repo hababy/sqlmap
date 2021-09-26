@@ -1,3 +1,4 @@
 @echo off
-echo "锟斤拷sqlmap使锟斤拷--dns-domai使锟斤拷,锟斤拷锟斤拷锟斤拷锟睫癸拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟绞碉拷锟絛ns锟斤拷锟斤拷注锟斤拷,锟斤拷锟斤拷锟斤拷--dns-domain='sqlmap.fa1lb2.ceye.io'"
-python "D:\Program_Tools\sqlmap\sqlmapdns.py"
+echo 使用环境:  带外注入,解决布尔时间盲注效率或堆叠注入回显时使用
+echo 需求配置:  --dns-domain='sqlmap.fa1lb2.ceye.io'
+python "D:\Program_Tools\_Scan_Vlu\sqlmap\sqlmapdns.py"

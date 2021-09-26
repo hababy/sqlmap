@@ -40,4 +40,4 @@ while True:
             print("Please check udp://127.0.0.1:53!!!!!!")
         len_a = records
     else:
-        time.sleep(3)
+        time.sleep(1)

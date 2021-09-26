@@ -1,2 +1,2 @@
 @echo off
-python "D:\Program_Tools\sqlmap\sqlmap.py" --random-agent  --output-dir="D:\Program_Tools\sqlmap\output" -v 3 %*
+python "D:\Program_Tools\_Scan_Vlu\sqlmap\sqlmap.py" --random-agent  --output-dir="D:\Program_Tools\_Scan_Vlu\sqlmap\output" -v 3 %*
